@@ -19,22 +19,137 @@ a{
     cursor:pointer;
   }
 
-.bigMenu{
-    display:inline-block;   
+
+/* sitemenu */
+
+.logMenu >a, .siteMenu >a{
+  
+  text-align: right;
 }
 
-.bigMenu :hover{
-  color:red;
+.siteMenu{
+  display:inline;
 }
 
-.bigMenu .help{
+.siteMenu > a{
+  display:inline-block;
+}
+
+.about{
   display:none;
 }
 
-.bigMenu li ul li :hover{
+.siteMenu:hover .about{
+  background-color: white;
+  display:inline-block;
+  border: solid black 1px;
+  width:150px;
+}
+
+.siteMenu .about a{
+  display:inline-block;
+  width:150px;
+}
+
+.siteMenu .about a:hover{
+  background-color: gray;
+
+}
+
+
+
+/* .siteMenu .about li{
   display:block;
+}
+
+.siteMenu .about li a{
+  display:block;
+} */
+
+/* hiphopleLogo */
+
+.titleLogo{
+  text-align: center;
+  display:inline-block;
+  margin-left:300px;
+}
+
+/* bigmenu */
+
+.bigMenu{
+  display:inline-block;
+}
+
+.bigMenu > li a:hover{
   color:red;
 }
+
+.bigMenu li ul {
+  display:none;
+}
+
+.bigMenu li:hover ul{
+  display:block;
+  background-color: white;
+}
+
+/* .bigMenu li ul li{
+  display:block;
+}
+
+.bigMenu li ul li a{
+  display:block;
+} */
+
+
+.bigMenu li ul li a:hover{
+  color:red;
+ }
+
+
+/* .bigMenu{
+    display:inline-block;   
+}
+
+.bigMenu > li{
+  display:inline;
+  position:relative;
+  background:0;
+  cursor:pointer;
+}
+
+.bigMenu > li a:hover{
+  color:red;
+}
+
+.bigMenu ul{
+  display:block;
+  display:inline;
+}
+
+.bigMenu li ul{
+  position:absolute;
+  display:none;
+  background-color: white;
+}
+
+.bigMenu li:hover ul{
+  display:block;
+}
+
+
+.bigMenu li ul li{
+  display:block;
+}
+
+.bigMenu li ul li a{
+  display:block;
+}
+
+.bigMenu li ul li a:hover{
+  color:red;
+} */
+
 
 
 
@@ -43,11 +158,11 @@ a{
     margin:auto;
 }
 
-
 .right{
     position:absolute;
     font-size:150px;
 }
+
 .left{
     position:absolute;
     font-size:150px;
