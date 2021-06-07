@@ -1,7 +1,9 @@
 const left = document.querySelector(".left");
 const right = document.querySelector(".right");
 const Img = document.getElementsByClassName("Img");
-
+const logIn = document.querySelector(".logIn");
+const logInDetails = document.querySelector(".logInDetails");
+const closeBtn = document.querySelector(".closeBtn");
 //console.log(Img.length);
 
 right.addEventListener("click", moveRight);
@@ -39,8 +41,13 @@ function moveLeft() {
 
 }
 
+logIn.addEventListener("click", function () {
+    logInDetails.classList.toggle("active");
+});
 
-
+closeBtn.addEventListener("click", function () {
+    logInDetails.classList.remove("active");
+});
 
 
 
