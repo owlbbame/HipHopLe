@@ -19,41 +19,113 @@ a{
     cursor:pointer;
   }
 
-
-/* sitemenu */
-
-.logMenu >a, .siteMenu >a{
-  
-  text-align: right;
+.active{
+  display:inline-block;
 }
+
+/* logIn */
+
+.logIn{
+  border:0;
+  outline:0;
+  background-color: white;
+  cursor:pointer;
+}
+
+fieldset{
+  padding:15px;
+  display:none;
+  position: absolute;
+  right:100px;
+  top:100px;
+  background-color: white;
+}
+
+fieldset h2{
+  display: inline-block;
+  width:250px;
+  text-align: left;
+}
+
+.logInDetails button{
+  border:0;
+  outline:0;
+  background-color: transparent;
+  cursor:pointer;
+  
+}
+
+.inputId, .inputPw{
+  display:block;
+  height:30px;
+  margin-top:10px;
+  width:250px;
+}
+
+.logInDetails{
+  width: 300px;
+  height: 250px;
+}
+
+
+.buttonArea{
+  text-align: left;
+  margin-top: 20px;
+}
+
+.buttonArea input{
+  margin-left: 30px;
+}
+
+.buttonArea button{
+  width:80px;
+  height:30px;
+  margin-left:30px;
+}
+
+.help{
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/*sitemenu */
 
 .siteMenu{
-  display:inline;
+  text-align: right;
+  margin-right:200px;
 }
 
-.siteMenu > a{
+.drop{
+  position:relative;
   display:inline-block;
 }
 
 .about{
   display:none;
-}
-
-.siteMenu:hover .about{
+  position: absolute;
   background-color: white;
-  display:inline-block;
   border: solid black 1px;
   width:150px;
+  right:5px;
+
+}
+
+.drop:hover .about{
+  display:block;
 }
 
 .siteMenu .about a{
   display:inline-block;
   width:150px;
+  text-align: center;
+  margin-right:100px;
+  
 }
 
 .siteMenu .about a:hover{
   background-color: gray;
-
 }
 
 
@@ -70,8 +142,7 @@ a{
 
 .titleLogo{
   text-align: center;
-  display:inline-block;
-  margin-left:300px;
+  display:block;
 }
 
 /* bigmenu */
